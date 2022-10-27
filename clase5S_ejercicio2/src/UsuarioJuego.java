@@ -1,12 +1,14 @@
 public class UsuarioJuego {
     private String nombre;
-    private String clave;
+        private String clave;
     private Double puntaje;
     private int nivel;
 
-    public void UsuarioJuego(String nombre, String clave){
+    public UsuarioJuego(String nombre, String clave){
         this.nombre = nombre;
         this.clave = clave;
+        puntaje = 0.0;
+        nivel = 0;
     }
 
     public void aumentarPuntaje(){
@@ -29,6 +31,8 @@ public class UsuarioJuego {
         return nivel;
     }
 
-
+    public String toString(){
+        return "Usuario: " + nombre + " Clave: " + clave +  " Puntaje: " + puntaje + " Nivel: " + nivel;
+    }
 
 }

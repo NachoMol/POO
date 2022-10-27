@@ -34,4 +34,8 @@ public class Cliente {
     public String getApellido(){
         return apellido;
     }
+
+    public String toString (){
+        return "Nombre: " + nombre + " Apellido: " + apellido + " Nro Cliente: " + numeroCliente;
+    }
 }

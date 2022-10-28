@@ -4,13 +4,13 @@ public class Perro {
 
     private Boolean enAdopcion;
     private String raza;
-    private LocalDate anioNacimiento;
+    private int anioNacimiento;
     private double peso;
     private Boolean tieneChip;
     private Boolean estaLastimado;
     private String nombre;
 
-    public Perro (boolean enAdopcion, String raza, LocalDate anioNacimiento, double peso, Boolean tieneChip, Boolean estaLastimado, String nombre){
+    public Perro (boolean enAdopcion, String raza, int anioNacimiento, double peso, Boolean tieneChip, Boolean estaLastimado, String nombre){
         this.enAdopcion = enAdopcion;
         this.raza = raza;
         this.anioNacimiento = anioNacimiento;
@@ -40,5 +40,8 @@ public class Perro {
         }
     }
 
+    public String toString(){
+        return "Nombre: " + nombre + " Peso: " + peso;
+    };
 
 }

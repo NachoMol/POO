@@ -33,7 +33,7 @@ public class Perro {
     }
 
     public Boolean sePuedeAdoptar(){
-        if(!estaLastimado && peso > 5){
+        if(enAdopcion && !estaLastimado && peso > 5){
             return true;
         }else{
             return false;

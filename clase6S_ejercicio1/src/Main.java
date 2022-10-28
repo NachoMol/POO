@@ -7,5 +7,9 @@ public class Main {
 
 
         System.out.println(perro1);
+
+        System.out.println(perro1.sePuedePerder());
+        System.out.println(perro1.sePuedeAdoptar());
     }
+
 }

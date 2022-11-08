@@ -33,7 +33,7 @@ public class Objeto {
         this.posy = posy;
     }
 
-    public static char getDireccion() {
+    public char getDireccion() {
         return direccion;
     }
 
@@ -43,16 +43,18 @@ public class Objeto {
 
     @Override
     public boolean equals(Object obj) {
+        boolean resultado = false;
         if(obj == null){
-            return false;
+            resultado = false;
         }
         if(obj.getClass() != this.getClass() ){
-            return false;
+            resultado =  false;
         }
         Objeto temp = (Objeto)obj;
 
-        if(direccion.equals(temp.direccion)){
-            return true;
+        if(((Objeto) obj).direccion== temp.direccion){
+            resultado =  true;
         }
+        return resultado;
     }
 }

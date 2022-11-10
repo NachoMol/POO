@@ -1,4 +1,4 @@
-public class Cuenta{
+public abstract class Cuenta{
 
     private Double saldo = 0.0;
     private Cliente cliente;
@@ -6,7 +6,7 @@ public class Cuenta{
 
 
     public Cuenta(Integer numeroCliente, String apellido, Integer dni, Integer cuit) {
-        
+
     }
 
     public void depositar(Double saldo){
@@ -26,6 +26,15 @@ public class Cuenta{
     public Double informarSaldo (){
         System.out.println("su saldo es: " + saldo);
         return this.saldo;
+    }
+
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     @Override

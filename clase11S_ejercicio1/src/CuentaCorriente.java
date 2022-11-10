@@ -9,10 +9,12 @@ public class CuentaCorriente extends Cuenta{
 
     @Override
     public void extraer(Double saldo){
-        if(this.informarSaldo() > 0){
-            this.extraer(saldo);
+        if(this.informarSaldo() > saldo){
+            this.setSaldo(this.getSaldo() - saldo);
+            System.out.println("se retiro correctamente: " + saldo);
         }else{
-            this.extraer(montoAutorizado);
+            this.setSaldo(this.getSaldo() - montoAutorizado);
+            System.out.println("se retiro correctamente: " + montoAutorizado + "MONTO AUTORIZADO");
         }
     }
 

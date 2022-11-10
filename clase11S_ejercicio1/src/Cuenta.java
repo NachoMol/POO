@@ -24,10 +24,16 @@ public abstract class Cuenta{
     }
 
     public Double informarSaldo (){
-        System.out.println("su saldo es: " + saldo);
         return this.saldo;
     }
 
+    public Double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(Double saldo) {
+        this.saldo = saldo;
+    }
 
     public Cliente getCliente() {
         return cliente;

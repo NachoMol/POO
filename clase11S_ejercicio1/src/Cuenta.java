@@ -1,4 +1,4 @@
-public abstract class Cuenta extends Cliente {
+public class Cuenta extends Cliente {
 
     private Double saldo = 0.0;
     private Cliente cliente;
@@ -24,6 +24,7 @@ public abstract class Cuenta extends Cliente {
     }
 
     public Double informarSaldo (){
+        System.out.println("su saldo es: " + saldo);
         return this.saldo;
     }
 

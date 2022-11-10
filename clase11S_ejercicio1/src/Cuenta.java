@@ -1,4 +1,4 @@
-public class Cuenta extends Cliente {
+public class Cuenta{
 
     private Double saldo = 0.0;
     private Cliente cliente;
@@ -6,7 +6,7 @@ public class Cuenta extends Cliente {
 
 
     public Cuenta(Integer numeroCliente, String apellido, Integer dni, Integer cuit) {
-        super(numeroCliente, apellido, dni, cuit);
+        
     }
 
     public void depositar(Double saldo){

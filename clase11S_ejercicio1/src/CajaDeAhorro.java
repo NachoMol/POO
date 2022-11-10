@@ -1,2 +1,5 @@
-public class CajaDeAhorro {
+public class CajaDeAhorro extends Cuenta{
+
+
+
 }

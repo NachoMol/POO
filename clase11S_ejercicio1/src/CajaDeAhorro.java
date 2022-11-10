@@ -7,17 +7,13 @@ private Double tasaInteres;
         this.tasaInteres = tasaInteres;
     }
 
-    @Override
-    public void depositar(Double saldo){
-        if(this.informarSaldo() > 0){
-            this.depositar(saldo);
-        }
-    }
 
     @Override
     public void extraer(Double saldo){
         if(this.informarSaldo() > 0){
             this.extraer(saldo);
+        }else {
+            System.out.println("no tienes saldo suficiente");
         }
     }
 

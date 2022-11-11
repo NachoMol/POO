@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3bb57f5-50d8-438f-9e56-ce1aea1ca64c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CuentaComitente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CuentaComitente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CuentaCorriente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CuentaCorriente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

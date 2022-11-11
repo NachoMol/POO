@@ -10,7 +10,7 @@ private Double tasaInteres;
 
     @Override
     public void extraer(Double saldo){
-        if(this.informarSaldo() > saldo){
+        if(this.informarSaldo() >= saldo){
             this.setSaldo(this.getSaldo() - saldo);
             System.out.println("se retiro correctamente: " + saldo);
         }else {

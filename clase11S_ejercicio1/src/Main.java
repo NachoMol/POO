@@ -7,5 +7,8 @@ public class Main {
         cliente1.extraer(600.0);
         System.out.println(cliente1.informarSaldo());
 
+        Cuenta cliente2 = new CuentaComitente(2,"Molina", 41710177,41710177, "asd1324")
+
+
     }
 }

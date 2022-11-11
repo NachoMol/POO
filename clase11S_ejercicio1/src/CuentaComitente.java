@@ -25,12 +25,14 @@ public class CuentaComitente extends Cuenta{
     }
 
 
-    public void extraer(Double saldo, String claveCnv){
-        if(this.informarSaldo() > saldo){
-            this.setSaldo(this.getSaldo() - saldo);
-            System.out.println("se retiro correctamente: " + saldo);
-        }else {
-            System.out.println("no tienes saldo suficiente");
+    public void extraer(Double saldo, String claveCnv) {
+        if (claveCnv == this.claveCnv) {
+            if (this.informarSaldo() >= saldo) {
+                this.setSaldo(this.getSaldo() - saldo);
+                System.out.println("se retiro correctamente: " + saldo);
+            } else {
+                System.out.println("no tienes saldo suficiente");
+            }
         }
     }
 

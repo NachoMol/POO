@@ -1,4 +1,4 @@
-public class Final extends Examen{
+public class Final extends Examen implements Comparable{
 
     private Double notaOral;
     private String tema;
@@ -18,4 +18,17 @@ public class Final extends Examen{
         }
     }
 
+    @Override
+    public int compareTo(Object o) {
+        Final f = (Final) o;
+
+        if((this.getNota() + this.notaOral) > (f.notaOral + f.getNota()) ){
+            return 1;
+        }else if((this.getNota() + this.notaOral) == (f.notaOral + f.getNota())){
+            return 0;
+        }else{
+            return -1;
+        }
+
+    }
 }

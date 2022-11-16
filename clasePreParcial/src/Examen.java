@@ -13,4 +13,15 @@ public abstract class Examen {
 
     public abstract Boolean aprobado();
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getEnunciado() {
+        return enunciado;
+    }
+
+    public Double getNota() {
+        return nota;
+    }
 }

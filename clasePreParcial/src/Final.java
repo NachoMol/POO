@@ -1,9 +1,9 @@
 public class Final extends Examen implements Comparable{
 
     private Double notaOral;
-    private String tema;
+    private Integer tema;
 
-        public Final(String titulo, String enunciado, Alumno alumno, Double notaOral, String tema) {
+        public Final(String titulo, String enunciado, Alumno alumno, Double notaOral, Integer tema) {
         super(titulo, enunciado, alumno);
         this.notaOral = notaOral;
         this.tema = tema;

@@ -22,7 +22,7 @@ public class Parcial extends Examen {
         cantidadIntentos++;
     }
 
-    
+
     public boolean puedeRecuperar() {
 
         boolean resultado = false;

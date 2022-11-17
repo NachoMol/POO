@@ -3,7 +3,7 @@ public class Parcial extends Examen implements Recuperable {
     private Integer numeroUnidad;
     private Integer cantidadIntentos;
 
-    public Parcial(String titulo, String enunciado, Double nota, String numeroUnidad, String cantidadIntentos) {
+    public Parcial(String titulo, String enunciado, Double nota, Integer numeroUnidad, Integer cantidadIntentos) {
         super(titulo, enunciado, nota);
         this.numeroUnidad = numeroUnidad;
         this.cantidadIntentos = cantidadIntentos;

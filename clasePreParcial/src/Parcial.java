@@ -1,7 +1,7 @@
-public class Parcial extends Examen {
+public class Parcial extends Examen implements Recuperable {
 
-    private String numeroUnidad;
-    private String cantidadIntentos;
+    private Integer numeroUnidad;
+    private Integer cantidadIntentos;
 
     public Parcial(String titulo, String enunciado, Double nota, String numeroUnidad, String cantidadIntentos) {
         super(titulo, enunciado, nota);
@@ -10,11 +10,27 @@ public class Parcial extends Examen {
     }
 
     @Override
-    public Boolean aprobado(){
-        if(this.getNota() >= 4){
+    public Boolean aprobado() {
+        if (this.getNota() >= 4) {
             return true;
-        }else{
+        } else {
             return false;
         }
+    }
+
+
+    @Override
+    public boolean puedeRecuperar() {
+
+        boolean resultado = false;
+
+        if (this.numeroUnidad <= 3) {
+            if (this.cantidadIntentos < 3) {
+                resultado = true;
+            } else if (this.cantidadIntentos < 2) {
+                resultado = true;
+            }
+        }
+        return resultado;
     }
 }

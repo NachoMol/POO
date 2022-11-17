@@ -3,8 +3,8 @@ public class Final extends Examen implements Comparable{
     private Double notaOral;
     private String tema;
 
-    public Final(String titulo, String enunciado, Double nota, Double notaOral, String tema) {
-        super(titulo, enunciado, nota);
+        public Final(String titulo, String enunciado, Alumno alumno, Double notaOral, String tema) {
+        super(titulo, enunciado, alumno);
         this.notaOral = notaOral;
         this.tema = tema;
     }
@@ -16,6 +16,10 @@ public class Final extends Examen implements Comparable{
         }else{
             return false;
         }
+    }
+
+    public void rendirOral(double nota){
+        this.notaOral = nota;
     }
 
     @Override

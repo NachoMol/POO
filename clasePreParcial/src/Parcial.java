@@ -1,4 +1,4 @@
-public class Parcial extends Examen implements Recuperable {
+public class Parcial extends Examen {
 
     private Integer numeroUnidad;
     private Integer cantidadIntentos;
@@ -22,8 +22,7 @@ public class Parcial extends Examen implements Recuperable {
         cantidadIntentos++;
     }
 
-
-    @Override
+    
     public boolean puedeRecuperar() {
 
         boolean resultado = false;

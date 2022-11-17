@@ -5,7 +5,7 @@ public class Main {
         Examen parcial1 = new Parcial("asd","asdasd1",alumno1,2,0);
         Examen final1 = new Final("asd","asdasd1",alumno1,2.0,0);
 
-        
+
 
     }
 }

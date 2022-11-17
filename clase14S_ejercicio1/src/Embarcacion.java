@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Embarcacion {
+public abstract class Embarcacion {
 
     private Capitan capitan;
     private Double precioBase;
@@ -16,8 +16,6 @@ public class Embarcacion {
             return precioBase;
         }
     }
-
-
 
 
 }

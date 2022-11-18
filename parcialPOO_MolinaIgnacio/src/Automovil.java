@@ -24,6 +24,8 @@ public class Automovil extends Vehiculo{
         }
     }
 
-
-
+    @Override
+    public String toString() {
+        return super.toString() + " usa gas?: " + usaGas + " cilindrada: " + cilindrada;
+    }
 }

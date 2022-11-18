@@ -18,9 +18,13 @@ public abstract class Vehiculo {
         this.esNacional = esNacional;
     }
 
-    
 
     public Boolean getEsNacional() {
         return esNacional;
+    }
+
+    @Override
+    public String toString() {
+        return "Dueño: " + dueño + " Fecha de Adquisicion: " + fechaAdquirido + " Cotizacion (en USD): " + cotizacionUsd + " Marca: " + marca + " patente: " + patente + " Es nacional?: " + esNacional;
     }
 }

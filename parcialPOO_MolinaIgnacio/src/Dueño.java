@@ -9,4 +9,8 @@ public class Dueño {
         this.apellido = apellido;
         this.cuil = cuil;
     }
+
+    public String toString(){
+        return "Nombre: " + nombre + " Apellido: " + apellido + " Cuil: " + cuil;
+    }
 }

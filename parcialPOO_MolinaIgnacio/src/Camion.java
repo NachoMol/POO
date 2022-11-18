@@ -1,12 +1,12 @@
 import java.time.LocalDate;
 
-public class Camion extends Automovil implements Comparable<Camion>{
+public class Camion extends Vehiculo implements Comparable<Camion>{
 
     private Integer cantidadEjes;
     private Double capacidad;
 
-    public Camion(Dueño dueño, LocalDate fechaAdquirido, Double cotizacionUsd, String marca, String patente, Boolean esNacional, Boolean usaGas, Integer cilindrada, Integer cantidadEjes, Double capacidad) {
-        super(dueño, fechaAdquirido, cotizacionUsd, marca, patente, esNacional, usaGas, cilindrada);
+    public Camion(Dueño dueño, LocalDate fechaAdquirido, Double cotizacionUsd, String marca, String patente, Boolean esNacional, Integer cantidadEjes, Double capacidad) {
+        super(dueño, fechaAdquirido, cotizacionUsd, marca, patente, esNacional);
         this.cantidadEjes = cantidadEjes;
         this.capacidad = capacidad;
     }
@@ -25,4 +25,8 @@ public class Camion extends Automovil implements Comparable<Camion>{
         }
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + " cantidad de Ejes: " + cantidadEjes + " Capacidad (en toneladas): " + capacidad;
+    }
 }

@@ -4,6 +4,9 @@ public class Almacen {
 
     private ArrayList<Producto> productos;
 
+    public Almacen(){
+        productos = new ArrayList<>();
+    }
 
     public double calcularEspacioNecesario(){
     double resultado = 0.0;

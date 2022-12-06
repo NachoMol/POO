@@ -20,7 +20,7 @@ public class Main {
 
     ProgramaIntensivo programa= (ProgramaIntensivo)ofertaFactory.crearOferta(OfertaFactory.PROGRAMA, "FullStack", "Avanzado");
 
-    programa.calcularBonificacion(20);
+    programa.setPorcentajeBonificacion(20);
 
     programa.agregarOferta(curso1);
     programa.agregarOferta(curso2);

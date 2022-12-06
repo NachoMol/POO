@@ -18,7 +18,7 @@ public class Instituto {
         String informacion = "";
 
         for(OfertaAcademica oferta: ofertas){
-            informacion+= oferta.mostrarOferta() + "/n";
+            informacion+= oferta.mostrarOferta() + "\n";
         }
 
         return informacion;

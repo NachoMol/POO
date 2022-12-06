@@ -24,6 +24,6 @@ public class Instituto {
         return informacion;
     }
 
-    
+
 
 }
